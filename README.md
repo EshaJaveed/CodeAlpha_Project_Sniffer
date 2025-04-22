@@ -1,56 +1,71 @@
-# CodeAlpha_Project_Sniffer
-🕵️ Sniffer
-Sniffer is a lightweight network packet sniffer tool built for monitoring and analyzing network traffic. It captures and logs packets on a network interface, helping developers, network engineers, and cybersecurity professionals gain insights into data flow.
+# Enhanced Network Sniffer  
 
-🚀 Features
-🧲 Real-time packet capture
+👋 Hi, I’m **@EshaJaveed**  
+🔍 A Python-based tool for capturing and analyzing network packets.  
 
-📦 Supports Ethernet, TCP, UDP, ICMP, and more
+---
 
-🔍 Packet filtering by protocol or port
+### 🌟 Features  
+- Capture raw network packets  
+- Analyze protocols (TCP, UDP, ICMP, etc.)  
+- Resolve DNS names for IP addresses  
+- Display packet payloads (optional)  
+- Save captured data to a file  
+- Generate packet statistics (protocol breakdown, total packets, etc.)  
 
-📄 Logs captured data in human-readable format
+---
 
-💡 Lightweight and easy to use
+### 🛠️ Usage  
 
-🛠️ Installation
-Clone the repo:
+```bash
+python sniffer.py [options]
+```
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/sniffer.git
-cd sniffer
-Install dependencies (if applicable):
+#### Options  
+- `-p`, `--payload`: Show packet payload  
+- `-d`, `--dns`: Resolve DNS names  
+- `-o`, `--output`: Save output to a file  
 
-bash
-Copy
-Edit
-pip install -r requirements.txt  # for Python-based sniffers
-📦 Usage
-Basic usage:
+#### Example  
+```bash
+python sniffer.py --payload --dns --output capture.log
+```
 
-bash
-Copy
-Edit
-sudo python sniffer.py
-Options:
+---
 
-bash
-Copy
-Edit
--h, --help            show help message
--i, --interface       specify network interface
--p, --protocol        filter by protocol (tcp, udp, icmp)
--o, --output          save logs to file
-Example:
+### 📦 Requirements  
+- Python 3.x  
+- Administrative privileges (for raw socket operations)  
 
-bash
-Copy
-Edit
-sudo python sniffer.py -i eth0 -p tcp -o logs.txt
-🔒 Disclaimer
-This tool is intended for educational and authorized security testing purposes only. Do not use it on networks you do not own or have explicit permission to analyze.
+---
 
-📄 License
-MIT License. See LICENSE for more details.
+### 📂 Code Structure  
+- **EnhancedSniffer Class**: Handles packet capture, parsing, and display.  
+- **Main Script**: Parses command-line arguments and initializes the sniffer.  
+
+---
+
+### 📄 Example Output  
+```plaintext
+2023-10-05 14:30:45.123456 | TCP | 192.168.1.1:54321 -> 192.168.1.2:80  
+2023-10-05 14:30:45.234567 | UDP | 192.168.1.2:12345 -> 192.168.1.3:53  
+2023-10-05 14:30:45.345678 | ICMP | 192.168.1.1 -> 192.168.1.2  
+```
+
+---
+
+### ⚠️ Disclaimer  
+This tool is intended for **educational and legitimate network analysis purposes only**. Ensure you have proper authorization before using it on any network.  
+
+---
+
+✨ **Welcome to the Enhanced Network Sniffer!** Feel free to explore, contribute, or reach out for collaboration opportunities.  
+
+<!---
+saad-838/saad-838 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->  
+
+--- 
+
+This README is concise, informative, and follows a similar style to your profile README. Let me know if you’d like further tweaks! 😊
